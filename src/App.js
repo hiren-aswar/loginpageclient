@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import axios from "axios";
-
+  
 function App() {
   const [start, setStart] = useState(true);
   const [first, setFirst] = useState(false);
@@ -15,7 +15,7 @@ function App() {
   const login = () => {
     console.log("login");
     axios
-      .post("http://localhost:3001/insert", {
+      .post("https://Loginpageserver.hirenaswar.repl.co/insert", {
         name: name,
         password: password,
       })
@@ -43,7 +43,7 @@ function App() {
   };
   const signup = () => {
     axios
-      .post("http://localhost:3001/find", {
+      .post("https://Loginpageserver.hirenaswar.repl.co/find", {
         name: name,
         password: password,
       })
