@@ -15,7 +15,7 @@ function App() {
   const login = () => {
     console.log("login");
     axios
-      .post("https://Loginpageserver.hirenaswar.repl.co/insert", {
+      .post("https://loginpageserver.herokuapp.com/insert", {
         name: name,
         password: password,
       })
@@ -43,7 +43,7 @@ function App() {
   };
   const signup = () => {
     axios
-      .post("https://Loginpageserver.hirenaswar.repl.co/find", {
+      .post("https://loginpageserver.herokuapp.com/find", {
         name: name,
         password: password,
       })
